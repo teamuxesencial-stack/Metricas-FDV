@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flujo de Venta · 27 ago–24 nov 2026</title>
+  <meta name="description" content="En 90 días la propiedad Flujo de Venta registró 120.570 vistas totales (92.721 solo de clientes al excluir backoffice y login de Microsoft). La contratación y la firma de DPS se concentran en horario laboral.">
+  <meta name="theme-color" content="#f4f1ec">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%230f202b' width='32' height='32'/%3E%3Crect fill='%23ff585c' x='0' y='26' width='32' height='6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --slate: #0f202b;
+      --coral: #ff585c;
+      --coral-deep: #d2353f;
+      --aqua: #1aa9a4;
+      --purple: #6f5aa8;
+      --pink: #e06b8a;
+      --sky: #3b90c0;
+      --bg: #f4f1ec;
+      --paper: #fcfaf7;
+      --ink: #0f202b;
+      --muted: rgba(15, 32, 43, 0.62);
+      --faint: rgba(15, 32, 43, 0.42);
+      --line: rgba(15, 32, 43, 0.12);
+      --line-strong: rgba(15, 32, 43, 0.2);
+      --heat-empty: #efebe4;
+      --up: #1aa9a4;
+      --down: #d2353f;
+      --max: 72rem;
+      --pad: clamp(1.25rem, 4vw, 2.5rem);
+      --sticky: 3.25rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--sticky) + 1.25rem);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      font-family: "Noto Sans", system-ui, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(15, 32, 43, 0.06);
+      padding: 0.08em 0.35em;
+      border-radius: 3px;
+    }
+
+    a { color: inherit; }
+    a:hover { color: var(--coral-deep); }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--coral);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: var(--slate);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+    }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+
+    .wrap {
+      width: min(var(--max), 100%);
+      margin-inline: auto;
+      padding-inline: var(--pad);
+    }
+
+    /* —— Sticky nav —— */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(247, 245, 240, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topnav-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem 1.5rem;
+      min-height: var(--sticky);
+      padding-block: 0.55rem;
+      flex-wrap: wrap;
+    }
+    .topnav-title {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+      color: var(--slate);
+      text-decoration: none;
+      flex: 0 0 auto;
+    }
+    .topnav-title:hover { color: var(--coral-deep); }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.78rem;
+      font-size: 0.73rem;
+      line-height: 1.2;
+      color: var(--muted);
+      flex: 1 1 16rem;
+      padding-block: 0.15rem;
+    }
+    .toc a {
+      text-decoration: none;
+      white-space: nowrap;
+      color: var(--muted);
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid transparent;
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+    .toc a:hover { color: var(--slate); }
+    .toc a.is-active {
+      color: var(--coral-deep);
+      font-weight: 600;
+      border-bottom-color: var(--coral);
+    }
+
+    /* —— Hero —— */
+    .hero {
+      padding-top: clamp(2.75rem, 7vw, 5rem);
+      padding-bottom: clamp(2rem, 5vw, 3.25rem);
+    }
+    .hero-rule {
+      width: 2.5rem;
+      height: 2px;
+      background: var(--coral);
+      margin-bottom: 1.5rem;
+      border: 0;
+    }
+    h1 {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 5.4vw, 3.35rem);
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      color: var(--slate);
+      max-width: 16ch;
+    }
+    .hero-period {
+      font-family: Overpass, sans-serif;
+      font-weight: 500;
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      letter-spacing: -0.02em;
+      color: var(--muted);
+      margin-top: 0.55rem;
+    }
+    .lede {
+      margin-top: 1.35rem;
+      max-width: 48rem;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    /* —— Sections —— */
+    section {
+      padding-block: clamp(2.5rem, 6vw, 4.25rem);
+      border-top: 1px solid var(--line);
+      scroll-margin-top: calc(var(--sticky) + 0.75rem);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1), transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+    .sec-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.85rem 1.15rem;
+      align-items: baseline;
+      margin-bottom: 1.75rem;
+    }
+    .sec-index {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--coral-deep);
+      padding-top: 0.35rem;
+    }
+    h2 {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--slate);
+    }
+    .sec-caption {
+      grid-column: 2;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--faint);
+      max-width: 54rem;
+      margin-top: -0.35rem;
+    }
+    section .prose {
+      max-width: 48rem;
+      color: var(--ink);
+    }
+    section .prose + .prose { margin-top: 1rem; }
+    section .prose + .chart,
+    section .prose + .table-scroll,
+    section .prose + .kpis,
+    section .prose + .funnel,
+    section .callout + *,
+    section .segmented + *,
+    section .chart + *,
+    section .table-scroll + *,
+    section .grid + *,
+    section .props + *,
+    section .kpis + *,
+    section .funnel + *,
+    section .steps,
+    section * + .prose { margin-top: 1.35rem; }
+    section .table-scroll + .table-scroll { margin-top: 1.75rem; }
+
+    /* —— Properties —— */
+    .props {
+      display: grid;
+      border-top: 1px solid var(--line);
+    }
+    .props div {
+      display: grid;
+      grid-template-columns: 12.5rem 1fr;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .props dt {
+      font-family: Overpass, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .props dd { font-size: 0.98rem; }
+
+    /* —— KPI strip —— */
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .kpi {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 1.15rem 1.2rem;
+    }
+    .kpi-label {
+      font-family: Overpass, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 0.45rem;
+    }
+    .kpi-val {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: clamp(1.55rem, 2.5vw, 2rem);
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      color: var(--slate);
+      font-variant-numeric: tabular-nums;
+    }
+    .kpi-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    /* —— Funnel bars —— */
+    .funnel {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 1.25rem;
+    }
+    .funnel-row {
+      display: grid;
+      grid-template-columns: minmax(12rem, 17rem) 1fr auto;
+      gap: 0.75rem 1.15rem;
+      align-items: center;
+      padding: 0.35rem 0.4rem;
+      border-radius: 4px;
+      transition: background 0.15s ease;
+      cursor: default;
+    }
+    .funnel-row:hover {
+      background: rgba(15, 32, 43, 0.04);
+    }
+    .funnel-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--slate);
+    }
+    .funnel-meta {
+      font-size: 0.74rem;
+      color: var(--faint);
+      display: block;
+    }
+    .funnel-track {
+      height: 0.85rem;
+      background: var(--heat-empty);
+      position: relative;
+      overflow: hidden;
+    }
+    .funnel-fill {
+      height: 100%;
+      background: var(--slate);
+      transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .funnel-row.is-primary .funnel-fill {
+      background: var(--coral);
+    }
+    .funnel-val {
+      font-family: Overpass, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--slate);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* —— Tables —— */
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      min-width: 36rem;
+    }
+    th, td {
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th:first-child, td:first-child { padding-left: 0; }
+    th:last-child, td:last-child { padding-right: 0; }
+    td:first-child { overflow-wrap: anywhere; }
+    tbody tr {
+      transition: background 0.14s ease;
+    }
+    tbody tr:hover {
+      background: rgba(15, 32, 43, 0.035);
+    }
+    th {
+      font-family: Overpass, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--faint);
+      border-bottom: 1px solid var(--line-strong);
+      white-space: nowrap;
+      user-select: none;
+    }
+    th.is-sortable {
+      cursor: pointer;
+    }
+    th.is-sortable:hover {
+      color: var(--slate);
+    }
+    th .sort-ind {
+      display: inline-block;
+      margin-left: 0.28rem;
+      color: var(--coral-deep);
+      font-size: 0.72rem;
+    }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    td.emph { font-weight: 600; }
+    .delta-up { color: var(--up); }
+    .delta-down { color: var(--down); }
+
+    /* —— Callout —— */
+    .callout {
+      padding: 0.15rem 0 0.15rem 1.25rem;
+      border-left: 2px solid var(--coral);
+    }
+    .callout strong {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    .callout p { color: var(--ink); font-size: 0.98rem; }
+
+    /* —— Segmented —— */
+    .segmented {
+      position: relative;
+      display: inline-flex;
+      border: 1px solid var(--line-strong);
+      padding: 3px;
+      gap: 2px;
+      background: var(--paper);
+    }
+    .segmented-slider {
+      position: absolute;
+      top: 3px;
+      bottom: 3px;
+      left: 3px;
+      background: var(--slate);
+      transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), width 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 0;
+    }
+    .segmented button {
+      position: relative;
+      z-index: 1;
+      font-family: Overpass, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      padding: 0.4rem 0.95rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    .segmented button[aria-selected="true"] {
+      color: #fff;
+    }
+    .heat-panel {
+      transition: opacity 0.22s ease;
+    }
+    .heat-panel[hidden] {
+      display: none;
+    }
+
+    /* —— Heatmap —— */
+    .heatmap-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .heatmap {
+      display: grid;
+      gap: 3px;
+      min-width: 36rem;
+      font-size: 0.7rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .heatmap-sections { grid-template-columns: minmax(10.5rem, 1.5fr) repeat(7, 1fr); }
+    .heatmap-hours {
+      grid-template-columns: 2.3rem repeat(7, 1fr);
+      min-width: 28rem;
+    }
+    .heatmap .h-col,
+    .heatmap .h-row {
+      color: var(--faint);
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      transition: color 0.12s ease;
+    }
+    .heatmap .h-col { text-align: center; padding-bottom: 0.3rem; }
+    .heatmap .h-row {
+      display: flex;
+      align-items: center;
+      padding-right: 0.6rem;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      font-size: 0.72rem;
+    }
+    .heatmap .h-col.is-hl,
+    .heatmap .h-row.is-hl {
+      color: var(--coral-deep);
+    }
+    .heatmap-hours .h-row { justify-content: flex-end; padding-right: 0.4rem; }
+    .h-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.05rem;
+      background: var(--heat-empty);
+      color: var(--slate);
+      font-weight: 500;
+      cursor: default;
+      transition: transform 0.12s ease, outline-color 0.12s ease, opacity 0.12s ease;
+    }
+    .h-cell.is-dim { opacity: 0.62; }
+    .h-cell.is-active {
+      outline: 2px solid var(--slate);
+      outline-offset: -1px;
+      position: relative;
+      z-index: 2;
+    }
+    .heatmap-hours .h-cell { min-height: 1.35rem; font-size: 0.62rem; }
+    .h-legend {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.72rem;
+      color: var(--faint);
+    }
+    .h-scale {
+      width: 6.5rem;
+      height: 0.4rem;
+      background: linear-gradient(90deg, var(--heat-empty), var(--coral));
+    }
+
+    /* —— Charts —— */
+    .chart {
+      width: 100%;
+      position: relative;
+    }
+    .chart svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.25rem;
+      margin-bottom: 0.7rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .legend-btn {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      border: 0;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      padding: 0.15rem 0.25rem;
+      border-radius: 3px;
+      transition: opacity 0.16s ease, background 0.16s ease;
+    }
+    .legend-btn:hover { background: rgba(15, 32, 43, 0.05); }
+    .legend-btn.is-off { opacity: 0.38; text-decoration: line-through; }
+    .chart-legend i {
+      display: inline-block;
+      width: 0.9rem;
+      height: 2px;
+      margin-right: 0.4rem;
+      vertical-align: middle;
+      background: currentColor;
+    }
+    .chart-legend .swatch {
+      display: inline-block;
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-right: 0.4rem;
+      vertical-align: -0.05rem;
+    }
+    .legend-dash i { background: transparent; border-top: 1.5px dashed var(--purple); width: 0.9rem; height: 0; }
+    .legend-coral { color: var(--coral-deep); }
+    .legend-coral i, .legend-coral .swatch { background: var(--coral); }
+    .legend-slate .swatch { background: var(--slate); }
+    .legend-aqua .swatch { background: var(--aqua); }
+    .legend-purple .swatch { background: var(--purple); }
+    .legend-pink .swatch { background: var(--pink); }
+    .legend-sky .swatch { background: var(--sky); }
+
+    /* —— Floating Tooltip —— */
+    .viz-tooltip {
+      position: fixed;
+      z-index: 80;
+      pointer-events: none;
+      background: var(--slate);
+      color: #fcfaf7;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 0.76rem;
+      line-height: 1.4;
+      padding: 0.5rem 0.7rem;
+      border-radius: 4px;
+      box-shadow: 0 6px 20px rgba(15, 32, 43, 0.22);
+      max-width: 17rem;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+    }
+    .viz-tooltip.is-open {
+      opacity: 1;
+      transform: none;
+    }
+    .viz-tooltip strong {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.15rem;
+      color: #fff;
+    }
+    .viz-tooltip .tt-sub {
+      color: rgba(252, 250, 247, 0.76);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* —— Grid —— */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem 2.5rem;
+      align-items: start;
+    }
+    .pie-block { display: flex; flex-direction: column; gap: 1rem; align-items: stretch; }
+    #chart-pie { display: flex; justify-content: center; }
+    .pie-legend { list-style: none; font-size: 0.88rem; }
+    .pie-legend li {
+      display: grid;
+      grid-template-columns: 0.6rem 1fr auto;
+      gap: 0.65rem;
+      align-items: center;
+      padding: 0.45rem 0.35rem;
+      border-bottom: 1px solid var(--line);
+      cursor: pointer;
+      transition: background 0.14s ease;
+    }
+    .pie-legend li:hover,
+    .pie-legend li.is-hl { background: rgba(15, 32, 43, 0.04); }
+    .pie-legend li:last-child { border-bottom: 0; }
+    .pie-legend .dot { width: 0.6rem; height: 0.6rem; }
+    .pie-legend .val { font-variant-numeric: tabular-nums; color: var(--muted); }
+
+    /* —— Lists —— */
+    .hypotheses { list-style: none; counter-reset: h; }
+    .hypotheses > li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.9rem;
+      padding: 1.35rem 0;
+      border-top: 1px solid var(--line);
+      counter-increment: h;
+    }
+    .hypotheses > li:last-child { border-bottom: 1px solid var(--line); }
+    .hypotheses > li::before {
+      content: counter(h, decimal-leading-zero);
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      color: var(--coral-deep);
+      padding-top: 0.2rem;
+    }
+    .hypotheses .lead {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: -0.015em;
+      line-height: 1.35;
+      margin-bottom: 0.45rem;
+    }
+    .hypotheses .support {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .hypotheses .support::before {
+      content: "Soporte: ";
+      font-weight: 600;
+      color: var(--slate);
+    }
+
+    .steps { list-style: none; counter-reset: s; }
+    .steps > li {
+      display: grid;
+      grid-template-columns: 2.2rem 1fr;
+      gap: 0.9rem;
+      padding: 1.4rem 0;
+      border-top: 1px solid var(--line);
+      counter-increment: s;
+    }
+    .steps > li:last-child { border-bottom: 1px solid var(--line); }
+    .steps > li::before {
+      content: counter(s, decimal-leading-zero);
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--coral-deep);
+      padding-top: 0.15rem;
+    }
+    .steps h3 {
+      font-family: Overpass, sans-serif;
+      font-weight: 600;
+      font-size: 1.08rem;
+      letter-spacing: -0.015em;
+      margin-bottom: 0.35rem;
+    }
+    .steps p { color: var(--muted); font-size: 0.98rem; }
+
+    /* —— Footer —— */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2rem 0 3.5rem;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--faint);
+    }
+
+    @media (max-width: 820px) {
+      .toc {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        mask-image: linear-gradient(90deg, #000 85%, transparent);
+        padding-block: 0.2rem;
+      }
+      .toc::-webkit-scrollbar { display: none; }
+      .topnav-inner { flex-wrap: nowrap; }
+      .grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .kpis { grid-template-columns: 1fr 1fr; }
+      .props div { grid-template-columns: 1fr; gap: 0.2rem; padding: 0.75rem 0; }
+      .funnel-row { grid-template-columns: 1fr auto; }
+      .funnel-track { grid-column: 1 / -1; order: 3; }
+      .sec-head { grid-template-columns: 1fr; gap: 0.25rem; }
+      .sec-index { padding-top: 0; }
+      .sec-caption { grid-column: 1; margin-top: 0.35rem; }
+      .heatmap-hours .h-cell span { display: none; }
+      .topnav-title { max-width: 9.5rem; overflow: hidden; text-overflow: ellipsis; }
+    }
+
+    @media (max-width: 540px) {
+      .kpis { grid-template-columns: 1fr; }
+      table { font-size: 0.8rem; min-width: 36rem; }
+      th, td { padding: 0.55rem 0.65rem; }
+      th:first-child, td:first-child { padding-left: 0; }
+      th:last-child, td:last-child { padding-right: 0; }
+      td:first-child { overflow-wrap: normal; }
+    }
+
+    @media print {
+      .topnav, .skip, .viz-tooltip { display: none; }
+      body { background: #fff; }
+      section { break-inside: avoid; opacity: 1 !important; transform: none !important; }
+      html { scroll-padding-top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <nav class="topnav" aria-label="Secciones">
+    <div class="wrap topnav-inner">
+      <a class="topnav-title" href="#inicio">Flujo de Venta</a>
+      <div class="toc">
+        <a href="#alcance">Alcance y embudo</a>
+        <a href="#comparacion">Qué mejoró y qué empeoró</a>
+        <a href="#tendencia">Tendencia diaria</a>
+        <a href="#momentos">Tres momentos</a>
+        <a href="#dias">Días y horas</a>
+        <a href="#rutas">Rutas más visitadas</a>
+        <a href="#eventos">Eventos y canales</a>
+        <a href="#hipotesis">Hipótesis y drivers</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero wrap" id="inicio">
+    <hr class="hero-rule">
+    <h1>Flujo de Venta</h1>
+    <p class="hero-period">27 ago–24 nov 2026</p>
+    <p class="lede">En 90 días la propiedad registró 120.570 vistas totales, pero el 23,1% corresponde a uso interno (/backoffice y login de Microsoft). Al aislar a los clientes (92.721 vistas), la contratación y la firma de DPS se concentran en horario laboral, mientras la medición de compra real marca cero.</p>
+  </header>
+
+  <main id="contenido">
+    <section id="alcance" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">01</p>
+          <h2>Alcance y embudo</h2>
+        </div>
+        <dl class="props">
+          <div><dt>Período</dt><dd>27 ago 2026 – 24 nov 2026 (90 días completos)</dd></div>
+          <div><dt>Sitio y propiedad</dt><dd><code>simula-tu-plan.somosesencial.cl</code> · Flujo de Venta | GA4 | Prod (314745369)</dd></div>
+          <div><dt>Totales oficiales (API)</dt><dd>120.570 vistas · 24.987 usuarios activos · 43.275 sesiones · 4 min 5 s por usuario</dd></div>
+          <div><dt>Vista solo clientes</dt><dd>92.721 vistas (76,9%) · 24.570 usuarios activos · 32.458 sesiones · 3 min 23 s por usuario</dd></div>
+          <div><dt>Tráfico interno aislado</dt><dd>25.844 vistas en <code>/backoffice*</code> (586 usuarios) y 22.055 vistas desde <code>login.microsoftonline.com</code> (373 usuarios, ~41 min/usuario)</dd></div>
+          <div><dt>Eventos clave</dt><dd>235.607 totales (97% es «Pantalla 1 btn enviar»); 6.367 <code>resultado_simulacion</code> y 761 <code>contratacion_paso_1</code></dd></div>
+        </dl>
+
+        <div class="kpis" id="kpi-strip">
+          <div class="kpi">
+            <div class="kpi-label">Vistas solo clientes</div>
+            <div class="kpi-val" data-count="92721" data-suffix="">92.721</div>
+            <div class="kpi-sub">76,9% del total de la propiedad</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Usuarios activos clientes</div>
+            <div class="kpi-val" data-count="24570" data-suffix="">24.570</div>
+            <div class="kpi-sub">32.458 sesiones (3 min 23 s/usuario)</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Resultados de simulación</div>
+            <div class="kpi-val" data-count="6367" data-suffix="">6.367</div>
+            <div class="kpi-sub">4.482 usuarios únicos en <code>/simulacion/*</code></div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Firma OK y finalización</div>
+            <div class="kpi-val" data-count="3028" data-suffix="">3.028</div>
+            <div class="kpi-sub">Usuarios únicos (86,2% de quienes entran a DPS)</div>
+          </div>
+        </div>
+
+        <p class="prose">Los totales de la propiedad mezclan clientes reales con ejecutivos y operación interna que ingresan por <code>login.microsoftonline.com</code> a <code>/backoffice/*</code>. Para evaluar el comportamiento de compra, el resto del informe excluye <code>/backoffice*</code>, el referido de Microsoft y <code>/error/404</code> (515 vistas). En el embudo siguiente, cada etapa muestra usuarios únicos reales de clientes (no se suman entre etapas).</p>
+
+        <div class="funnel" id="chart-funnel" aria-label="Embudo de usuarios únicos de clientes en 90 días">
+          <div class="funnel-row is-primary" data-tip-title="1. Inicio simulador (/)" data-tip-sub="22.164 usuarios únicos · 31.859 vistas · entrada principal">
+            <div class="funnel-name">1. Inicio simulador (/)<span class="funnel-meta">31.859 vistas · entrada principal</span></div>
+            <div class="funnel-track"><div class="funnel-fill" style="width:100%"></div></div>
+            <div class="funnel-val">22.164 usuarios</div>
+          </div>
+          <div class="funnel-row" data-tip-title="2. Resultado (/simulacion/*)" data-tip-sub="4.482 usuarios únicos · 7.754 vistas · 20,2% respecto a /">
+            <div class="funnel-name">2. Resultado (/simulacion/*)<span class="funnel-meta">7.754 vistas · 20,2% respecto a /</span></div>
+            <div class="funnel-track"><div class="funnel-fill" style="width:20.2%"></div></div>
+            <div class="funnel-val">4.482 usuarios</div>
+          </div>
+          <div class="funnel-row" data-tip-title="3. Contratación (/contratacion-*)" data-tip-sub="4.806 usuarios únicos · 17.732 vistas · suma ingresos directos de ejecutivos">
+            <div class="funnel-name">3. Contratación (/contratacion-*)<span class="funnel-meta">17.732 vistas · suma ingresos directos de ejecutivos</span></div>
+            <div class="funnel-track"><div class="funnel-fill" style="width:21.7%"></div></div>
+            <div class="funnel-val">4.806 usuarios</div>
+          </div>
+          <div class="funnel-row" data-tip-title="4. Declaración de salud (DPS)" data-tip-sub="3.512 usuarios únicos · 32.381 vistas · incluye ida y vuelta con DocuSign">
+            <div class="funnel-name">4. Declaración de salud (DPS)<span class="funnel-meta">32.381 vistas · incluye ida y vuelta con DocuSign</span></div>
+            <div class="funnel-track"><div class="funnel-fill" style="width:15.8%"></div></div>
+            <div class="funnel-val">3.512 usuarios</div>
+          </div>
+          <div class="funnel-row" data-tip-title="5. Firma OK y finalización" data-tip-sub="3.028 usuarios únicos · 7.293 vistas · 86,2% de quienes entran a DPS">
+            <div class="funnel-name">5. Firma OK y finalización<span class="funnel-meta">7.293 vistas · 86,2% de quienes entran a DPS</span></div>
+            <div class="funnel-track"><div class="funnel-fill" style="width:13.7%"></div></div>
+            <div class="funnel-val">3.028 usuarios</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparacion" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">02</p>
+          <div>
+            <h2>Qué mejoró y qué empeoró</h2>
+            <p class="sec-caption">28 días recientes (28 oct–24 nov) frente a los 28 anteriores (30 sep–27 oct). Ambos tramos incluyen días de caída casi a cero entre el 22 oct y el 1 nov.</p>
+          </div>
+        </div>
+        <p class="prose">En el último mes llegaron menos usuarios (−12,8% oficial; −13,6% solo clientes), pero las vistas (+12,2% clientes) y la permanencia media (+33,5% clientes, de 3 min 25 s a 4 min 33 s; 5 min 17 s oficial) subieron con fuerza. La razón no es un mejor simulador: cayó el tráfico frío de pauta y creció el avance en contratación presencial, digital y firma de DPS.</p>
+        <div class="table-scroll">
+          <table class="sortable">
+            <thead>
+              <tr>
+                <th>Métrica</th>
+                <th class="num">30 sep–27 oct</th>
+                <th class="num">28 oct–24 nov</th>
+                <th class="num">Cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Vistas totales (oficial API)</td><td class="num" data-sort="27861">27.861</td><td class="num" data-sort="31528">31.528</td><td class="num delta-up" data-sort="13.2">+13,2%</td></tr>
+              <tr><td>Vistas solo clientes</td><td class="num" data-sort="20861">20.861</td><td class="num" data-sort="23416">23.416</td><td class="num delta-up" data-sort="12.2">+12,2%</td></tr>
+              <tr><td>Usuarios activos (oficial API)</td><td class="num" data-sort="5630">5.630</td><td class="num" data-sort="4912">4.912</td><td class="num delta-down" data-sort="-12.8">−12,8%</td></tr>
+              <tr><td>Usuarios activos solo clientes</td><td class="num" data-sort="5357">5.357</td><td class="num" data-sort="4626">4.626</td><td class="num delta-down" data-sort="-13.6">−13,6%</td></tr>
+              <tr><td>Sesiones solo clientes</td><td class="num" data-sort="7068">7.068</td><td class="num" data-sort="6394">6.394</td><td class="num delta-down" data-sort="-9.5">−9,5%</td></tr>
+              <tr><td>Tiempo medio/usuario (oficial)</td><td class="num" data-sort="249">4 min 9 s</td><td class="num" data-sort="317">5 min 17 s</td><td class="num delta-up" data-sort="27.2">+27,2%</td></tr>
+              <tr><td>Tiempo medio/usuario (clientes)</td><td class="num" data-sort="205">3 min 25 s</td><td class="num" data-sort="273">4 min 33 s</td><td class="num delta-up" data-sort="33.5">+33,5%</td></tr>
+              <tr><td>Tasa de engagement (clientes)</td><td class="num" data-sort="49.9">49,9%</td><td class="num" data-sort="55.8">55,8%</td><td class="num delta-up" data-sort="11.7">+11,7%</td></tr>
+              <tr><td>Eventos <code>resultado_simulacion</code></td><td class="num" data-sort="1628">1.628</td><td class="num" data-sort="1273">1.273</td><td class="num delta-down" data-sort="-21.8">−21,8%</td></tr>
+              <tr><td>Eventos <code>contratacion_paso_1</code></td><td class="num" data-sort="183">183</td><td class="num" data-sort="167">167</td><td class="num delta-down" data-sort="-8.7">−8,7%</td></tr>
+              <tr><td>Eventos clave totales (inflado)</td><td class="num" data-sort="53887">53.887</td><td class="num" data-sort="65229">65.229</td><td class="num delta-up" data-sort="21.0">+21,0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-scroll">
+          <table class="sortable">
+            <thead>
+              <tr>
+                <th>Etapa o grupo de rutas</th>
+                <th class="num">28 días previos</th>
+                <th class="num">Últimos 28</th>
+                <th class="num">Cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Inicio (/)</td><td class="num" data-sort="6685">6.685</td><td class="num" data-sort="6161">6.161</td><td class="num delta-down" data-sort="-7.8">−7,8%</td></tr>
+              <tr><td>Resultado simulación</td><td class="num" data-sort="1992">1.992</td><td class="num" data-sort="1589">1.589</td><td class="num delta-down" data-sort="-20.2">−20,2%</td></tr>
+              <tr><td>Contratación presencial</td><td class="num" data-sort="3577">3.577</td><td class="num" data-sort="4661">4.661</td><td class="num delta-up" data-sort="30.3">+30,3%</td></tr>
+              <tr><td>Contratación digital</td><td class="num" data-sort="585">585</td><td class="num" data-sort="699">699</td><td class="num delta-up" data-sort="19.5">+19,5%</td></tr>
+              <tr><td>Declaración de salud (DPS)</td><td class="num" data-sort="5800">5.800</td><td class="num" data-sort="7402">7.402</td><td class="num delta-up" data-sort="27.6">+27,6%</td></tr>
+              <tr><td>Firma OK y respuesta DPS</td><td class="num" data-sort="1816">1.816</td><td class="num" data-sort="2373">2.373</td><td class="num delta-up" data-sort="30.7">+30,7%</td></tr>
+              <tr><td>Productos adicionales</td><td class="num" data-sort="622">622</td><td class="num" data-sort="591">591</td><td class="num delta-down" data-sort="-5.0">−5,0%</td></tr>
+              <tr><td>Errores técnicos (<code>/error/dps</code>, 503, 500, 403)</td><td class="num" data-sort="134">134</td><td class="num" data-sort="180">180</td><td class="num delta-down" data-sort="34.3">+34,3%</td></tr>
+              <tr><td>Backoffice <code>/backoffice*</code> (interno)</td><td class="num" data-sort="6533">6.533</td><td class="num" data-sort="7339">7.339</td><td class="num" data-sort="12.3">+12,3%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="prose">Ojo con la lectura de conversión: el +21,0% en eventos clave totales no refleja más ventas. Se explica por «Pantalla 1 btn enviar» (52.076 → 63.789), mientras que los dos eventos reales de avance retrocedieron: <code>resultado_simulacion</code> bajó 21,8% y <code>contratacion_paso_1</code>, 8,7%.</p>
+      </div>
+    </section>
+
+    <section id="tendencia" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">03</p>
+          <div>
+            <h2>Tendencia diaria</h2>
+            <p class="sec-caption">Vistas diarias de clientes (sin backoffice ni Microsoft) y, en punteado, eventos <code>resultado_simulacion</code>. Zona America/Santiago. Haz clic en la leyenda para mostrar u ocultar series.</p>
+          </div>
+        </div>
+        <div class="chart-legend" id="trend-legend">
+          <button type="button" class="legend-btn legend-coral" data-series="views" aria-pressed="true"><i></i>Vistas clientes (eje izquierdo)</button>
+          <button type="button" class="legend-btn legend-dash" data-series="events" aria-pressed="true"><i></i>resultado_simulacion (eje derecho)</button>
+        </div>
+        <div class="chart" id="chart-trend" role="img" aria-label="Tendencia diaria de vistas de clientes y eventos resultado_simulacion del 27 de agosto al 24 de noviembre de 2026."></div>
+        <p class="prose">El techo de clientes ocurrió el 9 de septiembre (2.921 vistas y 346 simulaciones completadas) y el 31 de agosto (2.826 vistas). En Fiestas Patrias (18–20 sep) el flujo cayó a ~508–560 vistas diarias. Entre el 22 de octubre y el 1 de noviembre el registro se desplomó casi a cero (0 vistas el 23, 26, 31 oct y 1 nov), retomando actividad normal recién el 3 de noviembre (1.143 vistas de clientes).</p>
+      </div>
+    </section>
+
+    <section id="momentos" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">04</p>
+          <div>
+            <h2>Tres momentos del embudo</h2>
+            <p class="sec-caption">Peso porcentual de cada día en una semana tipo de clientes (sin backoffice), 27 ago–24 nov 2026. El miércoles aparece 12 veces; los demás días, 13.</p>
+          </div>
+        </div>
+        <div class="chart-legend" id="moments-legend">
+          <button type="button" class="legend-btn legend-slate" data-idx="0" aria-pressed="true"><span class="swatch"></span>Inicio (/)</button>
+          <button type="button" class="legend-btn legend-coral" data-idx="1" aria-pressed="true"><span class="swatch"></span>Resultado (/simulacion/*)</button>
+          <button type="button" class="legend-btn legend-aqua" data-idx="2" aria-pressed="true"><span class="swatch"></span>Contratación (/contratacion-*)</button>
+        </div>
+        <div class="chart" id="chart-moments" role="img" aria-label="Peso semanal por día de tres etapas del embudo: Inicio (/), Resultado y Contratación."></div>
+        <div class="table-scroll">
+          <table class="sortable">
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th class="num">Inicio /</th>
+                <th class="num">%</th>
+                <th class="num">Resultado</th>
+                <th class="num">%</th>
+                <th class="num">Contratación</th>
+                <th class="num">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Lunes</td><td class="num emph" data-sort="414">414</td><td class="num" data-sort="16.8">16,8%</td><td class="num" data-sort="104">104</td><td class="num" data-sort="17.3">17,3%</td><td class="num" data-sort="282">282</td><td class="num" data-sort="20.4">20,4%</td></tr>
+              <tr><td>Martes</td><td class="num emph" data-sort="443">443</td><td class="num" data-sort="17.9">17,9%</td><td class="num" data-sort="104">104</td><td class="num" data-sort="17.2">17,2%</td><td class="num" data-sort="296">296</td><td class="num" data-sort="21.4">21,4%</td></tr>
+              <tr><td>Miércoles</td><td class="num emph" data-sort="443">443</td><td class="num" data-sort="17.9">17,9%</td><td class="num" data-sort="115">115</td><td class="num" data-sort="19.0">19,0%</td><td class="num" data-sort="262">262</td><td class="num" data-sort="18.9">18,9%</td></tr>
+              <tr><td>Jueves</td><td class="num emph" data-sort="408">408</td><td class="num" data-sort="16.5">16,5%</td><td class="num" data-sort="113">113</td><td class="num" data-sort="18.6">18,6%</td><td class="num" data-sort="235">235</td><td class="num" data-sort="17.0">17,0%</td></tr>
+              <tr><td>Viernes</td><td class="num emph" data-sort="318">318</td><td class="num" data-sort="12.9">12,9%</td><td class="num" data-sort="74">74</td><td class="num" data-sort="12.1">12,1%</td><td class="num" data-sort="206">206</td><td class="num" data-sort="14.9">14,9%</td></tr>
+              <tr><td>Sábado</td><td class="num emph" data-sort="227">227</td><td class="num" data-sort="9.2">9,2%</td><td class="num" data-sort="45">45</td><td class="num" data-sort="7.4">7,4%</td><td class="num" data-sort="59">59</td><td class="num" data-sort="4.3">4,3%</td></tr>
+              <tr><td>Domingo</td><td class="num emph" data-sort="216">216</td><td class="num" data-sort="8.8">8,8%</td><td class="num" data-sort="51">51</td><td class="num" data-sort="8.4">8,4%</td><td class="num" data-sort="44">44</td><td class="num" data-sort="3.2">3,2%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Etapa del embudo</th>
+                <th>Mejor día</th>
+                <th>Peor día</th>
+                <th class="num">Lun–vie</th>
+                <th class="num">Fin de semana</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Inicio (/)</td><td>Martes y miércoles, 443/día (17,9%)</td><td>Domingo, 216 (8,8%)</td><td class="num">82,0%</td><td class="num">18,0%</td></tr>
+              <tr><td>Resultado (/simulacion/*)</td><td>Miércoles, 115/día (19,0%)</td><td>Sábado, 45 (7,4%)</td><td class="num">84,2%</td><td class="num">15,8%</td></tr>
+              <tr><td>Contratación (/contratacion-*)</td><td>Martes, 296/día (21,4%)</td><td>Domingo, 44 (3,2%)</td><td class="num">92,6%</td><td class="num">7,5%</td></tr>
+              <tr><td>DPS y firma (referencia)</td><td>Lunes, 537/día (21,2%)</td><td>Domingo, 73 (2,9%)</td><td class="num">92,7%</td><td class="num">7,2%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="prose">Mientras más avanza el embudo hacia el cierre, más se concentra entre lunes y viernes. El inicio en <code>/</code> retiene un 18,0% de su semana entre sábado y domingo por campañas y exploración; en cambio, Contratación (92,6% L–V) y DPS (92,7% L–V) casi desaparecen el fin de semana. Por fuera, <code>/backoffice*</code> marca 96,4% entre lunes y viernes (446 vistas/día el lunes vs 22 el domingo).</p>
+      </div>
+    </section>
+
+    <section id="dias" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">05</p>
+          <div>
+            <h2>Días y horas</h2>
+            <p class="sec-caption">Solo tráfico de clientes (sin backoffice ni Microsoft). En etapas, el valor es el promedio de vistas por día; en horas, el acumulado de 90 días en zona de Chile.</p>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Horario laboral para cerrar, domingo en la noche para mirar</strong>
+          <p>De lunes a jueves entre las 11 h y las 17 h ocurre el grueso de la contratación y la firma de DPS (picos a las 15–16 h). El sábado el tráfico cae a un tercio, con 72,2% desde celular; el domingo el pico se traslada a las 20 h (32,8% de sus vistas entre las 19 y las 23 h).</p>
+        </div>
+        <div class="segmented" role="tablist" aria-label="Vista del mapa de calor">
+          <div class="segmented-slider" aria-hidden="true"></div>
+          <button type="button" role="tab" id="tab-secciones" aria-selected="true" aria-controls="heat-secciones" data-view="secciones">Etapas del embudo</button>
+          <button type="button" role="tab" id="tab-horas" aria-selected="false" aria-controls="heat-horas" data-view="horas">Hora del día</button>
+        </div>
+        <div id="heat-secciones" class="heat-panel" role="tabpanel" aria-labelledby="tab-secciones"></div>
+        <div id="heat-horas" class="heat-panel" role="tabpanel" aria-labelledby="tab-horas" hidden></div>
+
+        <div class="grid">
+          <div>
+            <div class="chart-legend"><span class="legend-sky"><span class="swatch"></span>Vistas de clientes desde celular</span></div>
+            <div class="chart" id="chart-mobile" role="img" aria-label="Porcentaje de vistas de clientes desde celular por día de la semana: 45% a 48% entre lunes y jueves, 52% el viernes, 72% el sábado y 68% el domingo."></div>
+          </div>
+          <div class="table-scroll">
+            <table class="sortable">
+              <thead>
+                <tr>
+                  <th>Día</th>
+                  <th class="num">Vistas clientes/día</th>
+                  <th class="num">resultado_simulacion/día</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lunes</td><td class="num" data-sort="1390">1.390</td><td class="num" data-sort="84">84</td></tr>
+                <tr><td>Martes</td><td class="num" data-sort="1426">1.426</td><td class="num" data-sort="87">87</td></tr>
+                <tr><td>Miércoles</td><td class="num" data-sort="1340">1.340</td><td class="num" data-sort="96">96</td></tr>
+                <tr><td>Jueves</td><td class="num" data-sort="1227">1.227</td><td class="num" data-sort="94">94</td></tr>
+                <tr><td>Viernes</td><td class="num" data-sort="997">997</td><td class="num" data-sort="60">60</td></tr>
+                <tr><td>Sábado</td><td class="num" data-sort="455">455</td><td class="num" data-sort="36">36</td></tr>
+                <tr><td>Domingo</td><td class="num" data-sort="400">400</td><td class="num" data-sort="40">40</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="prose">Incluso sin <code>/backoffice</code>, los clientes usan más computador que celular entre lunes y jueves (móvil entre 44,6% y 48,4%). El viernes cruza la mitad (51,6%) y el sábado sube a 72,2%. La tasa de simulaciones completadas sigue el mismo ritmo laboral: 84–96/día de lunes a jueves contra 36–40/día en fin de semana.</p>
+      </div>
+    </section>
+
+    <section id="rutas" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">06</p>
+          <div>
+            <h2>Rutas más visitadas</h2>
+            <p class="sec-caption">90 días, excluyendo <code>/error/404</code> (515 vistas). El tiempo medio es duración de interacción por usuario activo.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="sortable">
+            <thead>
+              <tr>
+                <th>Ruta</th>
+                <th class="num">Vistas</th>
+                <th class="num">Usuarios</th>
+                <th class="num">Tiempo/usuario</th>
+                <th>Rol en el flujo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>/</code></td><td class="num" data-sort="31859">31.859</td><td class="num" data-sort="22164">22.164</td><td class="num" data-sort="46">46 s</td><td>Entrada del simulador</td></tr>
+              <tr><td><code>/backoffice/fun</code></td><td class="num" data-sort="13180">13.180</td><td class="num" data-sort="503">503</td><td class="num" data-sort="1795">29 min 55 s</td><td>Uso interno (ejecutivos/operación)</td></tr>
+              <tr><td><code>/contratacion-presencial/iniciar-sesion</code></td><td class="num" data-sort="10364">10.364</td><td class="num" data-sort="4495">4.495</td><td class="num" data-sort="28">28 s</td><td>Ingreso a contratación presencial</td></tr>
+              <tr><td><code>/backoffice</code></td><td class="num" data-sort="9632">9.632</td><td class="num" data-sort="512">512</td><td class="num" data-sort="58">58 s</td><td>Portal interno backoffice</td></tr>
+              <tr><td><code>/simulacion/resultado</code></td><td class="num" data-sort="7666">7.666</td><td class="num" data-sort="4454">4.454</td><td class="num" data-sort="129">2 min 9 s</td><td>Comparación de planes simulados</td></tr>
+              <tr><td><code>/declaracion-personal-de-salud/resumen</code></td><td class="num" data-sort="6573">6.573</td><td class="num" data-sort="3387">3.387</td><td class="num" data-sort="13">13 s</td><td>Resumen previo a DPS</td></tr>
+              <tr><td><code>/declaracion-personal-de-salud</code></td><td class="num" data-sort="6196">6.196</td><td class="num" data-sort="3381">3.381</td><td class="num" data-sort="53">53 s</td><td>Inicio declaración de salud</td></tr>
+              <tr><td><code>/dps/declaracion-de-salud</code></td><td class="num" data-sort="5686">5.686</td><td class="num" data-sort="3308">3.308</td><td class="num" data-sort="688">11 min 28 s</td><td>Formulario DPS (infla eventos clave)</td></tr>
+              <tr><td><code>/contratacion-presencial/end</code></td><td class="num" data-sort="5288">5.288</td><td class="num" data-sort="3115">3.115</td><td class="num" data-sort="132">2 min 12 s</td><td>Cierre paso presencial</td></tr>
+              <tr><td><code>/declaracion-personal-de-salud/firma-ok</code></td><td class="num" data-sort="5245">5.245</td><td class="num" data-sort="3017">3.017</td><td class="num" data-sort="12">12 s</td><td>Confirmación firma DPS</td></tr>
+              <tr><td><code>/dps/declaracion-de-salud-pendiente-firma</code></td><td class="num" data-sort="5127">5.127</td><td class="num" data-sort="3079">3.079</td><td class="num" data-sort="47">47 s</td><td>Espera / retorno desde DocuSign</td></tr>
+              <tr><td><code>/contratacion-digital/antecedentes-laborales</code></td><td class="num" data-sort="1610">1.610</td><td class="num" data-sort="1222">1.222</td><td class="num" data-sort="75">1 min 15 s</td><td>Flujo contratación digital</td></tr>
+              <tr><td><code>/additional-products</code></td><td class="num" data-sort="1549">1.549</td><td class="num" data-sort="874">874</td><td class="num" data-sort="43">43 s</td><td>Oferta de productos adicionales</td></tr>
+              <tr><td><code>/error/dps</code>, <code>503</code>, <code>500</code>, <code>403</code></td><td class="num" data-sort="616">616</td><td class="num" data-sort="436">436</td><td class="num" data-sort="10">10 s</td><td>Errores técnicos activos (503 subió +182,6%)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="prose">Solo <code>/backoffice/fun</code>, <code>/backoffice</code>, <code>/backoffice/dps</code> (1.247 vistas) y <code>/backoffice/documents</code> (1.138 vistas) suman más de 25.000 vistas generadas por ~500 usuarios internos. En el flujo de clientes destacan dos fricciones técnicas: <code>/error/dps</code> (287 vistas, +25% en los últimos 28 días) y <code>/error/503</code> (134 vistas en 90 días, pero saltó de 23 a 65 en el último mes).</p>
+      </div>
+    </section>
+
+    <section id="eventos" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">07</p>
+          <div>
+            <h2>Eventos clave y canales</h2>
+            <p class="sec-caption">De 17 eventos clave configurados en GA4, solo 3 registraron actividad. Para medir intención real por canal se muestra <code>resultado_simulacion</code> (6.367 eventos en 90 días).</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="pie-block">
+            <div id="chart-pie" role="img" aria-label="Distribución de resultado_simulacion por canal en 90 días: Direct 2.756, Unassigned 2.316, Organic Social 705, Cross-network y otros 590."></div>
+            <ul class="pie-legend" id="pie-legend"></ul>
+          </div>
+          <div class="table-scroll">
+            <table class="sortable">
+              <thead>
+                <tr>
+                  <th>Fuente / medio (90 días)</th>
+                  <th class="num">Sesiones</th>
+                  <th class="num">Tiempo/usuario</th>
+                  <th class="num">resultado_simulacion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>(direct) / (none)</td><td class="num" data-sort="11642">11.642</td><td class="num" data-sort="409">6 min 49 s</td><td class="num" data-sort="2756">2.756</td></tr>
+                <tr><td><code>login.microsoftonline.com</code> / referral (interno)</td><td class="num" data-sort="8324">8.324</td><td class="num" data-sort="2445">40 min 45 s</td><td class="num" data-sort="14">14</td></tr>
+                <tr><td>google / cpc</td><td class="num" data-sort="6390">6.390</td><td class="num" data-sort="40">40 s</td><td class="num" data-sort="423">423</td></tr>
+                <tr><td>meta / simulador_rmkt_mult</td><td class="num" data-sort="5859">5.859</td><td class="num" data-sort="26">26 s</td><td class="num" data-sort="675">675</td></tr>
+                <tr><td><code>apps.docusign.com</code> + <code>na4.docusign.net</code></td><td class="num" data-sort="2583">2.583</td><td class="num" data-sort="359">5 min 59 s</td><td class="num" data-sort="34">34</td></tr>
+                <tr><td>mail_CAS_simulador_esencial</td><td class="num" data-sort="1528">1.528</td><td class="num" data-sort="135">2 min 15 s</td><td class="num" data-sort="584">584</td></tr>
+                <tr><td>meta / meta (últimos 28 días)</td><td class="num" data-sort="1449">1.449</td><td class="num" data-sort="15">15 s</td><td class="num" data-sort="13">13</td></tr>
+                <tr><td>sitio_publico / organico</td><td class="num" data-sort="1249">1.249</td><td class="num" data-sort="186">3 min 6 s</td><td class="num" data-sort="678">678</td></tr>
+                <tr><td>simulador_sitio_publico_plan_esencial</td><td class="num" data-sort="578">578</td><td class="num" data-sort="300">5 min 0 s</td><td class="num" data-sort="284">284</td></tr>
+                <tr><td>banner_home_SP</td><td class="num" data-sort="440">440</td><td class="num" data-sort="271">4 min 31 s</td><td class="num" data-sort="217">217</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="sortable">
+            <thead>
+              <tr>
+                <th>Evento clave configurado</th>
+                <th class="num">Últimos 28d</th>
+                <th class="num">90 días</th>
+                <th>Estado real</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Pantalla 1 btn enviar</td><td class="num" data-sort="63789">63.789</td><td class="num" data-sort="228479">228.479</td><td>Sobre-disparado (~35,6 veces/usuario, 191.750 en /dps)</td></tr>
+              <tr><td><code>resultado_simulacion</code></td><td class="num" data-sort="1273">1.273</td><td class="num" data-sort="6367">6.367</td><td>Mide simulación real (−21,8% vs 28d previos)</td></tr>
+              <tr><td><code>contratacion_paso_1</code></td><td class="num" data-sort="167">167</td><td class="num" data-sort="761">761</td><td>Mide inicio contratación (−8,7% vs 28d previos)</td></tr>
+              <tr><td><code>purchase</code>, <code>btn_contratar</code>, <code>btn-success-contratacion</code> y 11 más</td><td class="num" data-sort="0">0</td><td class="num" data-sort="0">0</td><td>Configurados como clave, pero sin disparos</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="prose">Los UTMs internos sin mapeo estándar caen en <code>Unassigned</code> (<code>sitio_publico/organico</code>, <code>mail_CAS_simulador_esencial</code>, <code>banner_home_SP</code> y fichas de planes), pero concentran altísimo engagement (58–65%) y 2.316 simulaciones completas. En pauta, <code>Cross-network</code> cayó de 734 sesiones a 42 en los últimos 28 días, y <code>meta/meta</code> reemplazó a <code>simulador_rmkt_mult</code> con visitas fugaces de 15 s y 29,3% de engagement.</p>
+      </div>
+    </section>
+
+    <section id="hipotesis" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">08</p>
+          <div>
+            <h2>Hipótesis y drivers</h2>
+            <p class="sec-caption">Cada hipótesis se apoya en los datos de GA4 de los últimos 90 días y la comparación de 28 días.</p>
+          </div>
+        </div>
+        <ol class="hypotheses">
+          <li>
+            <div>
+              <p class="lead">El tráfico interno de backoffice distorsiona el tiempo de permanencia y el volumen aparente.</p>
+              <p class="support">solo 373 usuarios desde <code>login.microsoftonline.com</code> generan 8.324 sesiones (22.055 vistas, 40 min 45 s promedio) y <code>/backoffice*</code> suma 25.844 vistas (96,4% L–V). Al excluirlo, el tiempo medio por usuario en el último mes baja de 5 min 17 s a 4 min 33 s.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p class="lead">Los 235.607 eventos clave no miden ventas: tapan la caída real del embudo.</p>
+              <p class="support">de 17 eventos clave activos en la configuración, solo 3 disparan. «Pantalla 1 btn enviar» aporta 228.479 (97%), sobre todo dentro de <code>/dps/declaracion-de-salud</code> (191.750). Mientras ese ruido subió +22,5%, <code>resultado_simulacion</code> cayó 21,8% (1.628 → 1.273) y <code>contratacion_paso_1</code> bajó 8,7% (183 → 167), con <code>purchase</code> y <code>btn_contratar</code> en 0.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p class="lead">La intención alta viene del sitio público y correos propios; Meta trae rebote rápido.</p>
+              <p class="support"><code>sitio_publico/organico</code> (1.249 sesiones) logra 61,6% de engagement, 3 min 6 s y 678 <code>resultado_simulacion</code>; las fichas de planes superan el 63% de engagement. En cambio, <code>meta/meta</code> (1.449 sesiones en los últimos 28 días) dura 15 s, con 29,3% de engagement y solo 13 resultados de simulación.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p class="lead">La contratación asistida y la firma de DPS siguen el horario de oficina, no el ritmo del fin de semana.</p>
+              <p class="support">el inicio (<code>/</code>) retiene 18,0% de sus vistas entre sábado y domingo, pero Contratación cae a 7,5% y DPS a 7,2% en fin de semana. De lunes a jueves entre las 11 y las 17 h se concentra el avance, apoyado por retornos desde DocuSign (2.583 sesiones).</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p class="lead">Hubo una ventana ciega de medición en octubre y un repunte reciente de errores 503 y de DPS.</p>
+              <p class="support">del 22 de octubre al 1 de noviembre el tráfico registrado cayó casi a cero (4 días en 0 absoluto). Además, en los últimos 28 días <code>/error/503</code> subió +182,6% (23 → 65) y <code>/error/dps</code> +25,0% (68 → 85).</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="recomendaciones" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-index">09</p>
+          <h2>Recomendaciones</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>Limpiar eventos clave y restaurar la medición de compra</h3>
+              <p>Quitar la marca de evento clave a «Pantalla 1 btn enviar» (ruido de formularios) y revisar en GTM/código por qué <code>purchase</code>, <code>btn_contratar</code>, <code>btn-success-contratacion</code> y <code>fast_track_finalizado</code> marcan cero.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Separar tráfico interno de clientes en GA4</h3>
+              <p>Crear un filtro de tráfico interno o audiencia que excluya rutas <code>/backoffice*</code> y sesiones desde <code>login.microsoftonline.com</code>, evitando que ~500 colaboradores alteren promedios y conversiones.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Auditar la caída del 22 oct–1 nov y los errores 503 / DPS</h3>
+              <p>Revisar qué detuvo la recolección de GA4 durante 11 días entre octubre y noviembre, e investigar el alza de <code>/error/503</code> (+182,6%) y <code>/error/dps</code> (287 vistas) en el último tramo del flujo.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Ordenar UTMs del sitio público y revisar pauta paga</h3>
+              <p>Estandarizar <code>utm_medium</code>/<code>utm_source</code> para que <code>sitio_publico</code>, banners y fichas de planes dejen de caer en Unassigned. Revisar la segmentación o landing de Meta (15 s de estadía) y qué pasó con Cross-network (734 → 42 sesiones).</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Capturar el interés móvil de fin de semana para retomarlo el lunes</h3>
+              <p>El 72% del tráfico de sábado entra desde celular y no completa contratación ni DPS en el momento. Facilitar guardado de simulación o envío de resumen por correo/WhatsApp para retomar el lunes en escritorio.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      GA4 Data API · Cuenta Esencial · Propiedad Flujo de Venta | GA4 | Prod (314745369) · https://simula-tu-plan.somosesencial.cl · 27 ago 2026–24 nov 2026 · zona America/Santiago · Sin datos de /error/404 en el detalle. Vista de clientes excluye /backoffice*, login.microsoftonline.com y /error/404.
+    </div>
+  </footer>
+
+  <div class="viz-tooltip" id="viz-tooltip" role="status" aria-live="polite"></div>
+
+  <script>
+  (function () {
+    const NS = "http://www.w3.org/2000/svg";
+    const C = {
+      slate: "#0f202b",
+      coral: "#ff585c",
+      coralDeep: "#d2353f",
+      aqua: "#1aa9a4",
+      purple: "#6f5aa8",
+      pink: "#e06b8a",
+      sky: "#3b90c0",
+      line: "rgba(15, 32, 43, 0.12)",
+      faint: "rgba(15, 32, 43, 0.42)",
+      muted: "rgba(15, 32, 43, 0.62)",
+      heatEmpty: "#efebe4",
+    };
+
+    const dailyViews = [1771, 1764, 996, 865, 2826, 1160, 1244, 1169, 1261, 672, 563, 2254, 2388, 2921, 2767, 1528, 948, 773, 1690, 1396, 1257, 1000, 508, 474, 372, 1665, 1505, 1809, 1639, 1503, 485, 509, 2192, 2570, 2595, 876, 940, 376, 272, 883, 1045, 1167, 1065, 909, 498, 386, 517, 1382, 1331, 1534, 1202, 536, 593, 1240, 1460, 40, 8, 0, 4, 1, 0, 1, 4, 4, 1, 0, 0, 516, 1143, 1019, 1574, 1154, 279, 355, 1449, 1370, 1167, 992, 851, 290, 219, 1238, 1575, 1532, 1551, 1344, 352, 288, 1600, 1549];
+    const dailyResSim = [139, 92, 53, 60, 125, 108, 83, 89, 78, 62, 39, 120, 153, 346, 327, 97, 56, 75, 118, 74, 89, 44, 46, 34, 51, 141, 104, 121, 114, 95, 58, 69, 95, 111, 104, 110, 81, 44, 40, 63, 70, 113, 70, 64, 40, 41, 64, 103, 94, 110, 88, 45, 47, 106, 127, 3, 0, 0, 1, 0, 0, 0, 2, 1, 0, 0, 0, 25, 74, 83, 75, 57, 32, 40, 75, 75, 55, 88, 45, 16, 31, 74, 73, 63, 56, 42, 27, 27, 84, 53];
+    const dayLabels = ["27/8", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "17/9", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "8/10", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "29/10", "", "", "", "", "", "", "", "", "", "", "", "10/11", "", "", "", "", "", "", "", "", "", "", "", "", "", "24/11"];
+    const fullDates = ["Jue 27 ago", "Vie 28 ago", "S\u00e1b 29 ago", "Dom 30 ago", "Lun 31 ago", "Mar 1 sep", "Mi\u00e9 2 sep", "Jue 3 sep", "Vie 4 sep", "S\u00e1b 5 sep", "Dom 6 sep", "Lun 7 sep", "Mar 8 sep", "Mi\u00e9 9 sep", "Jue 10 sep", "Vie 11 sep", "S\u00e1b 12 sep", "Dom 13 sep", "Lun 14 sep", "Mar 15 sep", "Mi\u00e9 16 sep", "Jue 17 sep", "Vie 18 sep", "S\u00e1b 19 sep", "Dom 20 sep", "Lun 21 sep", "Mar 22 sep", "Mi\u00e9 23 sep", "Jue 24 sep", "Vie 25 sep", "S\u00e1b 26 sep", "Dom 27 sep", "Lun 28 sep", "Mar 29 sep", "Mi\u00e9 30 sep", "Jue 1 oct", "Vie 2 oct", "S\u00e1b 3 oct", "Dom 4 oct", "Lun 5 oct", "Mar 6 oct", "Mi\u00e9 7 oct", "Jue 8 oct", "Vie 9 oct", "S\u00e1b 10 oct", "Dom 11 oct", "Lun 12 oct", "Mar 13 oct", "Mi\u00e9 14 oct", "Jue 15 oct", "Vie 16 oct", "S\u00e1b 17 oct", "Dom 18 oct", "Lun 19 oct", "Mar 20 oct", "Mi\u00e9 21 oct", "Jue 22 oct", "Vie 23 oct", "S\u00e1b 24 oct", "Dom 25 oct", "Lun 26 oct", "Mar 27 oct", "Mi\u00e9 28 oct", "Jue 29 oct", "Vie 30 oct", "S\u00e1b 31 oct", "Dom 1 nov", "Lun 2 nov", "Mar 3 nov", "Mi\u00e9 4 nov", "Jue 5 nov", "Vie 6 nov", "S\u00e1b 7 nov", "Dom 8 nov", "Lun 9 nov", "Mar 10 nov", "Mi\u00e9 11 nov", "Jue 12 nov", "Vie 13 nov", "S\u00e1b 14 nov", "Dom 15 nov", "Lun 16 nov", "Mar 17 nov", "Mi\u00e9 18 nov", "Jue 19 nov", "Vie 20 nov", "S\u00e1b 21 nov", "Dom 22 nov", "Lun 23 nov", "Mar 24 nov"];
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function fmtInt(n) {
+      return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+    function fmtPct(n) {
+      return n.toFixed(1).replace(".", ",") + "%";
+    }
+    function el(tag, attrs, parent) {
+      const node = document.createElementNS(NS, tag);
+      for (const k in attrs) node.setAttribute(k, attrs[k]);
+      if (parent) parent.appendChild(node);
+      return node;
+    }
+    function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+
+    const tooltip = document.getElementById("viz-tooltip");
+    function showTip(title, sub, clientX, clientY) {
+      tooltip.innerHTML = "<strong>" + title + "</strong><span class='tt-sub'>" + sub + "</span>";
+      tooltip.classList.add("is-open");
+      const pad = 12;
+      const rect = tooltip.getBoundingClientRect();
+      let left = clientX + 14;
+      let top = clientY - rect.height - 12;
+      if (left + rect.width > window.innerWidth - pad) left = clientX - rect.width - 14;
+      if (left < pad) left = pad;
+      if (top < pad) top = clientY + 18;
+      tooltip.style.left = left + "px";
+      tooltip.style.top = top + "px";
+    }
+    function hideTip() {
+      tooltip.classList.remove("is-open");
+    }
+
+    /* —— Sticky TOC active state & section reveals —— */
+    const sections = Array.from(document.querySelectorAll("main section[id]"));
+    const tocLinks = Array.from(document.querySelectorAll(".toc a"));
+    if ("IntersectionObserver" in window) {
+      const revObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.01, rootMargin: '0px 0px 100px 0px' });
+      sections.forEach(function (sec) {
+        if (reducedMotion) sec.classList.add("is-visible");
+        else revObs.observe(sec);
+      });
+
+      const navObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            tocLinks.forEach(function (a) {
+              a.classList.toggle("is-active", a.getAttribute("href") === "#" + id);
+            });
+          }
+        });
+      }, { rootMargin: "-25% 0px -65% 0px" });
+      sections.forEach(function (s) { navObs.observe(s); });
+    } else {
+      sections.forEach(function (s) { s.classList.add("is-visible"); });
+    }
+
+    /* —— KPI count-up —— */
+    const kpiStrip = document.getElementById("kpi-strip");
+    function animateKpis() {
+      kpiStrip.querySelectorAll(".kpi-val[data-count]").forEach(function (node) {
+        const target = parseInt(node.getAttribute("data-count"), 10);
+        if (reducedMotion) {
+          node.textContent = fmtInt(target);
+          return;
+        }
+        const start = performance.now();
+        const dur = 750;
+        function tick(now) {
+          const t = Math.min(1, (now - start) / dur);
+          const eased = 1 - Math.pow(1 - t, 3);
+          node.textContent = fmtInt(target * eased);
+          if (t < 1) requestAnimationFrame(tick);
+          else node.textContent = fmtInt(target);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    if ("IntersectionObserver" in window && !reducedMotion) {
+      const kpiObs = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          animateKpis();
+          kpiObs.disconnect();
+        }
+      }, { threshold: 0.2 });
+      kpiObs.observe(kpiStrip);
+    }
+
+    /* —— Funnel row tooltips —— */
+    document.querySelectorAll("#chart-funnel .funnel-row").forEach(function (row) {
+      row.addEventListener("pointerenter", function (e) {
+        showTip(row.getAttribute("data-tip-title"), row.getAttribute("data-tip-sub"), e.clientX, e.clientY);
+      });
+      row.addEventListener("pointermove", function (e) {
+        showTip(row.getAttribute("data-tip-title"), row.getAttribute("data-tip-sub"), e.clientX, e.clientY);
+      });
+      row.addEventListener("pointerleave", hideTip);
+      row.addEventListener("click", function (e) {
+        showTip(row.getAttribute("data-tip-title"), row.getAttribute("data-tip-sub"), e.clientX || 180, e.clientY || 220);
+      });
+    });
+
+    /* —— Trend chart with crosshair + legend toggles + NO url(#gradient) —— */
+    const trendState = { views: true, events: true };
+    function drawTrend(container) {
+      clear(container);
+      const compact = container.clientWidth < 600;
+      const W = compact ? 520 : 1040;
+      const H = compact ? 270 : 340;
+      const pad = { t: 28, r: compact ? 34 : 44, b: 36, l: compact ? 42 : 54 };
+      const pw = W - pad.l - pad.r;
+      const ph = H - pad.t - pad.b;
+      const maxY = 3200;
+      const maxEv = 400;
+      const n = dailyViews.length;
+
+      const svg = el("svg", { viewBox: "0 0 " + W + " " + H }, container);
+      const x = function (i) { return pad.l + (i / (n - 1)) * pw; };
+      const y1 = function (v) { return pad.t + ph - (v / maxY) * ph; };
+      const y2 = function (v) { return pad.t + ph - (v / maxEv) * ph; };
+
+      [0, 800, 1600, 2400, 3200].forEach(function (v) {
+        const py = y1(v);
+        el("line", { x1: pad.l, y1: py, x2: W - pad.r, y2: py, stroke: C.line, "stroke-width": 1 }, svg);
+        const t = el("text", {
+          x: pad.l - 8, y: py + 4,
+          "text-anchor": "end",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 11 : 12,
+          fill: C.faint,
+        }, svg);
+        t.textContent = fmtInt(v);
+      });
+
+      [0, 100, 200, 300, 400].forEach(function (v) {
+        const py = y2(v);
+        const t = el("text", {
+          x: W - pad.r + 8, y: py + 4,
+          "text-anchor": "start",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 11 : 12,
+          fill: C.purple,
+          opacity: trendState.events ? 0.85 : 0.25,
+        }, svg);
+        t.textContent = fmtInt(v);
+      });
+
+      dayLabels.forEach(function (lab, i) {
+        if (!lab) return;
+        const t = el("text", {
+          x: x(i), y: H - 10,
+          "text-anchor": i === 0 ? "start" : i === n - 1 ? "end" : "middle",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 11 : 12,
+          fill: C.faint,
+        }, svg);
+        t.textContent = lab;
+      });
+
+      if (trendState.views) {
+        let areaD = "M " + x(0).toFixed(1) + " " + y1(0).toFixed(1);
+        let lineD = "";
+        dailyViews.forEach(function (v, i) {
+          const px = x(i).toFixed(1), py = y1(v).toFixed(1);
+          areaD += " L " + px + " " + py;
+          lineD += (i === 0 ? "M " : " L ") + px + " " + py;
+        });
+        areaD += " L " + x(n - 1).toFixed(1) + " " + y1(0).toFixed(1) + " Z";
+        el("path", { d: areaD, fill: C.coral, "fill-opacity": "0.10" }, svg);
+        el("path", { d: lineD, fill: "none", stroke: C.coral, "stroke-width": 2.2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+      }
+
+      if (trendState.events) {
+        let evD = "";
+        dailyResSim.forEach(function (v, i) {
+          evD += (i === 0 ? "M " : " L ") + x(i).toFixed(1) + " " + y2(v).toFixed(1);
+        });
+        el("path", { d: evD, fill: "none", stroke: C.purple, "stroke-width": 1.6, "stroke-dasharray": "4 4", "stroke-linejoin": "round" }, svg);
+      }
+
+      const notes = [
+        { idx: 13, label: "9 sep, pico (2.921)", dx: 6, dy: -8, anchor: "start" },
+        { idx: 22, label: "18 sep, Fiestas", dx: 4, dy: -24, anchor: "start" },
+        { idx: 57, label: "23 oct–1 nov, caída a 0", dx: 0, dy: -12, anchor: "middle" },
+        { idx: 75, label: "10 nov, 1.370", dx: 0, dy: -14, anchor: "middle" },
+      ];
+      notes.forEach(function (nt) {
+        const cx = x(nt.idx), cy = y1(dailyViews[nt.idx]);
+        if (trendState.views) {
+          el("circle", { cx: cx, cy: cy, r: 3.5, fill: C.slate }, svg);
+        }
+        const t = el("text", {
+          x: cx + nt.dx, y: cy + nt.dy,
+          "text-anchor": nt.anchor,
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 10.5 : 11.5,
+          "font-weight": 500,
+          fill: C.slate,
+        }, svg);
+        t.textContent = nt.label;
+      });
+
+      const crossLine = el("line", {
+        x1: pad.l, y1: pad.t, x2: pad.l, y2: pad.t + ph,
+        stroke: C.slate, "stroke-width": 1, "stroke-dasharray": "3 3", opacity: 0,
+      }, svg);
+      const dotViews = el("circle", { r: 4.5, fill: C.coralDeep, stroke: "#fff", "stroke-width": 1.5, opacity: 0 }, svg);
+      const dotEvents = el("circle", { r: 4, fill: C.purple, stroke: "#fff", "stroke-width": 1.5, opacity: 0 }, svg);
+      const overlay = el("rect", {
+        x: pad.l, y: pad.t, width: pw, height: ph, fill: "transparent", style: "cursor:crosshair;",
+      }, svg);
+
+      function updateHover(clientX, clientY) {
+        const rect = svg.getBoundingClientRect();
+        const svgX = (clientX - rect.left) / rect.width * W;
+        const ratio = Math.max(0, Math.min(1, (svgX - pad.l) / pw));
+        const idx = Math.round(ratio * (n - 1));
+        const cx = x(idx);
+        crossLine.setAttribute("x1", cx);
+        crossLine.setAttribute("x2", cx);
+        crossLine.setAttribute("opacity", "0.55");
+        if (trendState.views) {
+          dotViews.setAttribute("cx", cx);
+          dotViews.setAttribute("cy", y1(dailyViews[idx]));
+          dotViews.setAttribute("opacity", "1");
+        } else dotViews.setAttribute("opacity", "0");
+        if (trendState.events) {
+          dotEvents.setAttribute("cx", cx);
+          dotEvents.setAttribute("cy", y2(dailyResSim[idx]));
+          dotEvents.setAttribute("opacity", "1");
+        } else dotEvents.setAttribute("opacity", "0");
+
+        const parts = [];
+        if (trendState.views) parts.push("Vistas clientes: " + fmtInt(dailyViews[idx]));
+        if (trendState.events) parts.push("resultado_simulacion: " + fmtInt(dailyResSim[idx]));
+        showTip(fullDates[idx], parts.join(" · "), clientX, clientY);
+      }
+
+      overlay.addEventListener("pointermove", function (e) { updateHover(e.clientX, e.clientY); });
+      overlay.addEventListener("click", function (e) { updateHover(e.clientX, e.clientY); });
+      overlay.addEventListener("pointerleave", function () {
+        crossLine.setAttribute("opacity", "0");
+        dotViews.setAttribute("opacity", "0");
+        dotEvents.setAttribute("opacity", "0");
+        hideTip();
+      });
+    }
+
+    document.querySelectorAll("#trend-legend .legend-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const key = btn.getAttribute("data-series");
+        trendState[key] = !trendState[key];
+        btn.classList.toggle("is-off", !trendState[key]);
+        btn.setAttribute("aria-pressed", trendState[key] ? "true" : "false");
+        drawTrend(document.getElementById("chart-trend"));
+      });
+    });
+
+    /* —— Three moments grouped column chart —— */
+    const momentVisible = [true, true, true];
+    const momentSeries = [
+      { name: "Inicio (/)", color: C.slate, values: [16.8, 17.9, 17.9, 16.5, 12.9, 9.2, 8.8], avgs: [414, 443, 443, 408, 318, 227, 216] },
+      { name: "Resultado (/simulacion/*)", color: C.coral, values: [17.3, 17.2, 19.0, 18.6, 12.1, 7.4, 8.4], avgs: [104, 104, 115, 113, 74, 45, 51] },
+      { name: "Contratación (/contratacion-*)", color: C.aqua, values: [20.4, 21.4, 18.9, 17.0, 14.9, 4.3, 3.2], avgs: [282, 296, 262, 235, 206, 59, 44] },
+    ];
+    function drawMoments(container) {
+      clear(container);
+      const compact = container.clientWidth < 560;
+      const W = compact ? 520 : 1040;
+      const H = compact ? 260 : 300;
+      const pad = { t: 18, r: 12, b: 32, l: 42 };
+      const pw = W - pad.l - pad.r;
+      const ph = H - pad.t - pad.b;
+      const days = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
+      const fullDays = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+      const maxY = 24;
+
+      const svg = el("svg", { viewBox: "0 0 " + W + " " + H }, container);
+      const y = function (v) { return pad.t + ph - (v / maxY) * ph; };
+
+      [0, 6, 12, 18, 24].forEach(function (v) {
+        const py = y(v);
+        el("line", { x1: pad.l, y1: py, x2: W - pad.r, y2: py, stroke: C.line, "stroke-width": 1 }, svg);
+        const t = el("text", {
+          x: pad.l - 8, y: py + 4,
+          "text-anchor": "end",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 11 : 12,
+          fill: C.faint,
+        }, svg);
+        t.textContent = v + "%";
+      });
+
+      const activeIndices = [0, 1, 2].filter(function (i) { return momentVisible[i]; });
+      const groupW = pw / 7;
+      const innerW = groupW * 0.72;
+      const k = Math.max(1, activeIndices.length);
+      const gap = 3;
+      const barW = (innerW - gap * (k - 1)) / k;
+
+      days.forEach(function (d, di) {
+        const gx = pad.l + di * groupW + (groupW - innerW) / 2;
+        activeIndices.forEach(function (si, pos) {
+          const s = momentSeries[si];
+          const v = s.values[di];
+          const bh = (v / maxY) * ph;
+          const bx = gx + pos * (barW + gap);
+          const by = y(v);
+          const rect = el("rect", {
+            x: bx.toFixed(1), y: by.toFixed(1),
+            width: barW.toFixed(1), height: bh.toFixed(1),
+            fill: s.color, rx: 1,
+            style: "cursor:pointer; transition:opacity 0.14s ease;",
+          }, svg);
+          const tipTitle = fullDays[di] + " · " + s.name;
+          const tipSub = fmtPct(v) + " de la semana (" + fmtInt(s.avgs[di]) + " vistas/día)";
+          rect.addEventListener("pointerenter", function (e) {
+            rect.setAttribute("opacity", "0.82");
+            showTip(tipTitle, tipSub, e.clientX, e.clientY);
+          });
+          rect.addEventListener("pointermove", function (e) { showTip(tipTitle, tipSub, e.clientX, e.clientY); });
+          rect.addEventListener("pointerleave", function () {
+            rect.setAttribute("opacity", "1");
+            hideTip();
+          });
+          rect.addEventListener("click", function (e) {
+            showTip(tipTitle, tipSub, e.clientX || 180, e.clientY || 220);
+          });
+        });
+        const t = el("text", {
+          x: pad.l + (di + 0.5) * groupW, y: H - 10,
+          "text-anchor": "middle",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": compact ? 11.5 : 12.5,
+          fill: C.muted,
+        }, svg);
+        t.textContent = d;
+      });
+    }
+
+    document.querySelectorAll("#moments-legend .legend-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const idx = parseInt(btn.getAttribute("data-idx"), 10);
+        momentVisible[idx] = !momentVisible[idx];
+        btn.classList.toggle("is-off", !momentVisible[idx]);
+        btn.setAttribute("aria-pressed", momentVisible[idx] ? "true" : "false");
+        drawMoments(document.getElementById("chart-moments"));
+      });
+    });
+
+    /* —— Mobile % bar chart —— */
+    function drawMobile(container) {
+      clear(container);
+      const compact = container.clientWidth < 440;
+      const W = compact ? 420 : 520;
+      const H = 230;
+      const pad = { t: 24, r: 10, b: 28, l: 36 };
+      const pw = W - pad.l - pad.r;
+      const ph = H - pad.t - pad.b;
+      const vals = [44.6, 46.8, 48.4, 45.1, 51.6, 72.2, 67.8];
+      const labs = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
+      const fullLabs = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+      const svg = el("svg", { viewBox: "0 0 " + W + " " + H }, container);
+      const y = function (v) { return pad.t + ph - (v / 100) * ph; };
+
+      [0, 50, 100].forEach(function (v) {
+        const py = y(v);
+        el("line", { x1: pad.l, y1: py, x2: W - pad.r, y2: py, stroke: C.line, "stroke-width": 1 }, svg);
+        const t = el("text", {
+          x: pad.l - 6, y: py + 4,
+          "text-anchor": "end",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": 11, fill: C.faint,
+        }, svg);
+        t.textContent = v + "%";
+      });
+
+      const gw = pw / 7;
+      const bw = gw * 0.56;
+      vals.forEach(function (v, i) {
+        const bx = pad.l + i * gw + (gw - bw) / 2;
+        const by = y(v);
+        const bh = (v / 100) * ph;
+        const rect = el("rect", {
+          x: bx.toFixed(1), y: by.toFixed(1),
+          width: bw.toFixed(1), height: bh.toFixed(1),
+          fill: v >= 60 ? C.coral : C.sky, rx: 1,
+          style: "cursor:pointer;",
+        }, svg);
+        const tipTitle = fullLabs[i];
+        const tipSub = fmtPct(v) + " de vistas de clientes desde celular";
+        rect.addEventListener("pointerenter", function (e) {
+          rect.setAttribute("opacity", "0.82");
+          showTip(tipTitle, tipSub, e.clientX, e.clientY);
+        });
+        rect.addEventListener("pointermove", function (e) { showTip(tipTitle, tipSub, e.clientX, e.clientY); });
+        rect.addEventListener("pointerleave", function () {
+          rect.setAttribute("opacity", "1");
+          hideTip();
+        });
+        rect.addEventListener("click", function (e) { showTip(tipTitle, tipSub, e.clientX || 180, e.clientY || 220); });
+
+        const top = el("text", {
+          x: pad.l + (i + 0.5) * gw, y: by - 6,
+          "text-anchor": "middle",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": 11, "font-weight": 600,
+          fill: C.slate,
+        }, svg);
+        top.textContent = Math.round(v) + "%";
+        const bot = el("text", {
+          x: pad.l + (i + 0.5) * gw, y: H - 8,
+          "text-anchor": "middle",
+          "font-family": "Noto Sans, sans-serif",
+          "font-size": 11.5, fill: C.muted,
+        }, svg);
+        bot.textContent = labs[i];
+      });
+    }
+
+    /* —— Pie chart with hover + legend sync —— */
+    function drawPie(container, legendEl) {
+      clear(container);
+      clear(legendEl);
+      const parts = [
+        { label: "Direct", value: 2756, color: C.slate },
+        { label: "Unassigned (UTMs internos)", value: 2316, color: C.coral },
+        { label: "Organic Social", value: 705, color: C.aqua },
+        { label: "Cross-network y otros", value: 590, color: C.purple },
+      ];
+      const total = 6367;
+      const S = 240, cx = 120, cy = 120, R = 100, r = 56;
+      const svg = el("svg", { viewBox: "0 0 " + S + " " + S, style: "max-width: 240px;" }, container);
+
+      let a = -Math.PI / 2;
+      const arcs = [];
+      const lis = [];
+
+      function setHighlight(activeIdx) {
+        arcs.forEach(function (arc, idx) {
+          arc.setAttribute("opacity", activeIdx === -1 || activeIdx === idx ? "1" : "0.4");
+        });
+        lis.forEach(function (li, idx) {
+          li.classList.toggle("is-hl", idx === activeIdx);
+        });
+      }
+
+      parts.forEach(function (p, idx) {
+        const da = (p.value / total) * Math.PI * 2;
+        const a0 = a, a1 = a + da;
+        a = a1;
+        const x0 = cx + R * Math.cos(a0), y0 = cy + R * Math.sin(a0);
+        const x1 = cx + R * Math.cos(a1), y1 = cy + R * Math.sin(a1);
+        const xi0 = cx + r * Math.cos(a1), yi0 = cy + r * Math.sin(a1);
+        const xi1 = cx + r * Math.cos(a0), yi1 = cy + r * Math.sin(a0);
+        const large = da > Math.PI ? 1 : 0;
+        const d = [
+          "M", x0.toFixed(2), y0.toFixed(2),
+          "A", R, R, 0, large, 1, x1.toFixed(2), y1.toFixed(2),
+          "L", xi0.toFixed(2), yi0.toFixed(2),
+          "A", r, r, 0, large, 0, xi1.toFixed(2), yi1.toFixed(2),
+          "Z",
+        ].join(" ");
+        const path = el("path", { d: d, fill: p.color, style: "cursor:pointer; transition:opacity 0.14s ease;" }, svg);
+        const pct = fmtPct((p.value / total) * 100);
+        const tipSub = fmtInt(p.value) + " eventos (" + pct + ")";
+
+        path.addEventListener("pointerenter", function (e) {
+          setHighlight(idx);
+          showTip(p.label, tipSub, e.clientX, e.clientY);
+        });
+        path.addEventListener("pointermove", function (e) { showTip(p.label, tipSub, e.clientX, e.clientY); });
+        path.addEventListener("pointerleave", function () {
+          setHighlight(-1);
+          hideTip();
+        });
+        path.addEventListener("click", function (e) {
+          setHighlight(idx);
+          showTip(p.label, tipSub, e.clientX || 180, e.clientY || 220);
+        });
+        arcs.push(path);
+
+        const li = document.createElement("li");
+        li.innerHTML = "<span class='dot' style='background:" + p.color + "'></span><span>" + p.label + "</span><span class='val'>" + fmtInt(p.value) + " (" + pct + ")</span>";
+        li.addEventListener("pointerenter", function () { setHighlight(idx); });
+        li.addEventListener("pointerleave", function () { setHighlight(-1); });
+        legendEl.appendChild(li);
+        lis.push(li);
+      });
+
+      const cNum = el("text", {
+        x: cx, y: cy - 2, "text-anchor": "middle",
+        "font-family": "Overpass, sans-serif", "font-weight": 600, "font-size": 22, fill: C.slate,
+      }, svg);
+      cNum.textContent = "6.367";
+      const cSub = el("text", {
+        x: cx, y: cy + 16, "text-anchor": "middle",
+        "font-family": "Noto Sans, sans-serif", "font-size": 10.5, fill: C.faint,
+      }, svg);
+      cSub.textContent = "simulaciones";
+    }
+
+    /* —— Heatmap with row/col highlight + tooltips —— */
+    function luminance(hex) {
+      const n = parseInt(hex.slice(1), 16);
+      const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+      const f = function (c) {
+        c /= 255;
+        return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+      };
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    }
+    function mixHex(a, b, t) {
+      const pa = parseInt(a.slice(1), 16);
+      const pb = parseInt(b.slice(1), 16);
+      const ch = function (shift) {
+        const ca = (pa >> shift) & 255;
+        const cb = (pb >> shift) & 255;
+        return Math.round(ca + (cb - ca) * t);
+      };
+      const r = ch(16), g = ch(8), bl = ch(0);
+      return "#" + ((1 << 24) + (r << 16) + (g << 8) + bl).toString(16).slice(1);
+    }
+    function heatColor(t) {
+      if (t <= 0) return C.heatEmpty;
+      if (t < 0.5) return mixHex(C.heatEmpty, C.coral, t / 0.5 * 0.75);
+      return mixHex(mixHex(C.heatEmpty, C.coral, 0.75), C.coralDeep, (t - 0.5) / 0.5);
+    }
+
+    function renderHeatmap(target, rows, cols, values, kind) {
+      clear(target);
+      const wrap = document.createElement("div");
+      wrap.className = "heatmap-wrap";
+      const grid = document.createElement("div");
+      grid.className = "heatmap heatmap-" + kind;
+      grid.appendChild(document.createElement("div"));
+
+      const colHeaders = [];
+      const rowHeaders = [];
+      const cells = [];
+
+      cols.forEach(function (c) {
+        const d = document.createElement("div");
+        d.className = "h-col";
+        d.textContent = c;
+        grid.appendChild(d);
+        colHeaders.push(d);
+      });
+      let max = 0;
+      values.forEach(function (row) { row.forEach(function (v) { if (v > max) max = v; }); });
+
+      function highlight(ri, ci) {
+        colHeaders.forEach(function (h, idx) { h.classList.toggle("is-hl", idx === ci); });
+        rowHeaders.forEach(function (h, idx) { h.classList.toggle("is-hl", idx === ri); });
+        cells.forEach(function (c) {
+          const active = c.ri === ri && c.ci === ci;
+          const sameLine = c.ri === ri || c.ci === ci;
+          c.el.classList.toggle("is-active", active);
+          c.el.classList.toggle("is-dim", ri !== -1 && !sameLine);
+        });
+      }
+
+      rows.forEach(function (r, ri) {
+        const lab = document.createElement("div");
+        lab.className = "h-row";
+        lab.textContent = r;
+        grid.appendChild(lab);
+        rowHeaders.push(lab);
+        values[ri].forEach(function (v, ci) {
+          const cell = document.createElement("div");
+          cell.className = "h-cell";
+          const t = v / max;
+          const bg = heatColor(t);
+          cell.style.background = bg;
+          cell.style.color = luminance(bg) < 0.42 ? "#fff" : C.slate;
+          const span = document.createElement("span");
+          span.textContent = fmtInt(v);
+          cell.appendChild(span);
+
+          const tipTitle = r + " · " + cols[ci];
+          const tipSub = fmtInt(v) + (kind === "sections" ? " vistas/día promedio" : " vistas acumuladas (90d)");
+          cell.addEventListener("pointerenter", function (e) {
+            highlight(ri, ci);
+            showTip(tipTitle, tipSub, e.clientX, e.clientY);
+          });
+          cell.addEventListener("pointermove", function (e) { showTip(tipTitle, tipSub, e.clientX, e.clientY); });
+          cell.addEventListener("pointerleave", function () {
+            highlight(-1, -1);
+            hideTip();
+          });
+          cell.addEventListener("click", function (e) {
+            highlight(ri, ci);
+            showTip(tipTitle, tipSub, e.clientX || 180, e.clientY || 220);
+          });
+
+          grid.appendChild(cell);
+          cells.push({ el: cell, ri: ri, ci: ci });
+        });
+      });
+      wrap.appendChild(grid);
+      const legend = document.createElement("div");
+      legend.className = "h-legend";
+      legend.innerHTML = "<span>Menos</span><span class='h-scale'></span><span>Más</span>";
+      target.appendChild(wrap);
+      target.appendChild(legend);
+    }
+
+    const heatSec = {
+      rows: ["Inicio (/)", "Resultado simulaci\u00f3n", "Contrataci\u00f3n presencial", "Declaraci\u00f3n de salud (DPS)", "Firma OK y finalizaci\u00f3n", "Contrataci\u00f3n digital", "Productos adicionales", "Errores t\u00e9cnicos"],
+      cols: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+      values: [[414, 443, 443, 408, 318, 227, 216], [104, 104, 115, 113, 74, 45, 51], [239, 253, 224, 202, 181, 51, 37], [406, 410, 361, 319, 280, 83, 55], [131, 125, 120, 103, 90, 26, 18], [43, 42, 38, 33, 25, 9, 8], [41, 37, 31, 39, 21, 10, 13], [10, 10, 8, 7, 7, 4, 2]],
+    };
+    const heatHours = {
+      rows: ["0h","1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"],
+      cols: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+      values: [[197, 220, 222, 332, 348, 282, 225], [95, 127, 143, 133, 124, 131, 115], [31, 88, 77, 93, 79, 42, 73], [28, 83, 78, 67, 63, 57, 24], [53, 84, 42, 41, 25, 20, 28], [32, 98, 29, 35, 25, 22, 29], [41, 147, 72, 111, 78, 45, 37], [105, 225, 207, 240, 140, 121, 71], [310, 509, 449, 509, 376, 202, 158], [678, 885, 688, 735, 657, 258, 245], [1025, 1155, 859, 998, 880, 301, 258], [1288, 1311, 1132, 1119, 1089, 366, 265], [1232, 1540, 1249, 1265, 1296, 474, 236], [1290, 1174, 855, 1079, 1041, 288, 277], [1151, 1182, 943, 1004, 903, 367, 277], [1537, 1562, 1249, 1115, 865, 417, 253], [1479, 1269, 1186, 1519, 908, 327, 337], [1425, 1201, 1029, 1051, 909, 435, 292], [1328, 1224, 1022, 1016, 722, 409, 291], [1139, 1163, 1097, 965, 600, 260, 304], [1035, 981, 1152, 738, 655, 292, 451], [1269, 1026, 1016, 705, 510, 217, 352], [841, 828, 875, 625, 342, 298, 373], [461, 462, 415, 455, 330, 279, 225]],
+    };
+
+    renderHeatmap(document.getElementById("heat-secciones"), heatSec.rows, heatSec.cols, heatSec.values, "sections");
+    renderHeatmap(document.getElementById("heat-horas"), heatHours.rows, heatHours.cols, heatHours.values, "hours");
+
+    /* —— Segmented control with animated slider —— */
+    const seg = document.querySelector(".segmented");
+    const slider = seg.querySelector(".segmented-slider");
+    const tabs = Array.from(seg.querySelectorAll("button"));
+    const panelSec = document.getElementById("heat-secciones");
+    const panelHrs = document.getElementById("heat-horas");
+
+    function positionSlider(activeBtn) {
+      slider.style.width = activeBtn.offsetWidth + "px";
+      slider.style.transform = "translateX(" + (activeBtn.offsetLeft - 3) + "px)";
+    }
+    tabs.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const view = btn.getAttribute("data-view");
+        tabs.forEach(function (b) { b.setAttribute("aria-selected", b === btn ? "true" : "false"); });
+        positionSlider(btn);
+        panelSec.hidden = view !== "secciones";
+        panelHrs.hidden = view !== "horas";
+      });
+    });
+    positionSlider(tabs[0]);
+
+    /* —— Sortable tables —— */
+    document.querySelectorAll("table.sortable").forEach(function (table) {
+      const headers = Array.from(table.querySelectorAll("thead th"));
+      const tbody = table.querySelector("tbody");
+      headers.forEach(function (th, colIdx) {
+        th.classList.add("is-sortable");
+        const ind = document.createElement("span");
+        ind.className = "sort-ind";
+        th.appendChild(ind);
+        let dir = 0;
+        th.addEventListener("click", function () {
+          dir = dir === -1 ? 1 : -1;
+          headers.forEach(function (h) {
+            h.querySelector(".sort-ind").textContent = "";
+          });
+          ind.textContent = dir === 1 ? "↑" : "↓";
+          const rows = Array.from(tbody.querySelectorAll("tr"));
+          rows.sort(function (a, b) {
+            const ca = a.children[colIdx];
+            const cb = b.children[colIdx];
+            const sa = ca.getAttribute("data-sort");
+            const sb = cb.getAttribute("data-sort");
+            if (sa !== null && sb !== null) {
+              return (parseFloat(sa) - parseFloat(sb)) * dir;
+            }
+            return ca.textContent.trim().localeCompare(cb.textContent.trim(), "es") * dir;
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+        });
+      });
+    });
+
+    function renderAllCharts() {
+      drawTrend(document.getElementById("chart-trend"));
+      drawMoments(document.getElementById("chart-moments"));
+      drawMobile(document.getElementById("chart-mobile"));
+      drawPie(document.getElementById("chart-pie"), document.getElementById("pie-legend"));
+    }
+    renderAllCharts();
+
+    let resizeTimer = 0;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        renderAllCharts();
+        const activeTab = tabs.find(function (b) { return b.getAttribute("aria-selected") === "true"; });
+        if (activeTab) positionSlider(activeTab);
+      }, 120);
+    });
+  })();
+  </script>
+</body>
+</html>
